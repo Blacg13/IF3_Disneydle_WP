@@ -1,0 +1,13 @@
+.container {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-between;
+    align-items: center;
+    margin: 30px;
+}
+.quiz {
+    /* background-color: rosybrown; */
+    width: max-content;
+    border: 50px solid;
+    border-image: url("/src/assets/disney-border.svg") 40 fill;
+}

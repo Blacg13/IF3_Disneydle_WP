@@ -1,0 +1,19 @@
+.footer {
+    display: flex;
+    flex-flow: column nowrap;
+}
+.logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 24px;
+    img {
+        height: 32px;
+    }
+}
+.copyright {
+    font-size: 16px;
+}
+.disclaimer {
+    font-size: 12px;
+}
