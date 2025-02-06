@@ -2,7 +2,6 @@
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
   font-weight: 400;
-  /* background-image: url(/src/assets/disney_castle_without_the_text__by_victorzapata246810_daqowl4.jpg); */
 
   color-scheme: light dark;
   color: rgba(255, 255, 255, 0.87);
@@ -29,7 +28,11 @@ body {
   place-items: center;
   min-width: 320px;
   min-height: 100vh;
-}
+  /*!*/
+  background-color: #103173;
+  color: #D8A0D9;
+  background-image: radial-gradient(#103173 1%, transparent 30%), url('/src/assets/disney-castle.png');
+background-size: cover;}
 
 h1 {
   font-size: 3.2em;
