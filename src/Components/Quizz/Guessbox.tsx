@@ -5,15 +5,14 @@ interface GuessboxProps {
     dailyItem: string;
   }
 const Guessbox: React.FC<GuessboxProps> = ({ items, dailyItem }) => {
-    console.log("items: ", items);
     const [inputValue, setInputValue] = useState<string>('');
+    const [filteredItem, setFilteredItem] = useState<string>('');
     const [selectedItems, setSelectedItems] = useState<string[]>([]);
     
     // const [error, setError] = useState<string>('');
 
     const handleInput = (e: React.ChangeEvent<HTMLInputElement>) => {
         const input = e.currentTarget;
-        console.log("input.value: ", input.value);
         setInputValue(input.value);
         
         //? regex
@@ -23,19 +22,18 @@ const Guessbox: React.FC<GuessboxProps> = ({ items, dailyItem }) => {
         //     setError('');
         // }
         // input.value = input.value.replace(/^[^0-9.]*$/g, '');
+
+        const filtered = items.filter((item) => item.toLowerCase().includes(input.value.toLowerCase()));
+        console.log("filtered: ", filtered);
+        setFilteredItem(filtered[0]);
+        console.log("filteredItem: ", filteredItem);
+        
     }
     const handleClick = (e: React.MouseEvent<HTMLButtonElement>) => {
-        e.preventDefault();
-        console.log("e.currentTarget.value: ", e.currentTarget.value);
-        
-        // selectedItems.push(e.currentTarget.value);
-        setSelectedItems([...selectedItems, inputValue]);
+        e.preventDefault();        
+        setSelectedItems([...new Set([...selectedItems, filteredItem])]);
         console.log("selectedItems: ", selectedItems);
-        if (e.currentTarget.value === dailyItem) {
-            console.log("true ! :-D");
-        } else {
-            console.log("false :'-(");
-        }
+        
     }
     return (
         <>
@@ -50,9 +48,6 @@ const Guessbox: React.FC<GuessboxProps> = ({ items, dailyItem }) => {
                 <button onClick={handleClick}>Valider</button>
                 {/* {error && <p className={style.red}>{error}</p>} */}
             </form>
-            {/* {selectedItems.map((item) => (
-                <div key={item}>{item}</div>
-                ))} */}
         </section>
         <div>
             <ul>
