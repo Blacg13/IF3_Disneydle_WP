@@ -1,16 +1,19 @@
-import style from "./Header.module.css";
+import { Link } from "react-router-dom";
 const Header = () => {
     return (
-        <div className={style.header}>
-            <div className={style.title}>
+        <header>
+            <div>
             <img src="/src/assets/setting.png" alt="paramètres" />
-            <div className={style.h1}>
-            <h1 className={style.disneydle}>Disneydle</h1>
+            <div>
+            <h1>
+                <Link to="/">
+                Disneydle
+                </Link>
+            </h1>
             </div>
             <img src="/src/assets/france.png" alt="langues" />
             </div>
-            <h2>Devine les personnages Disney du jour !</h2>
-        </div>
+        </header >
     );
 };
 

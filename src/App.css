@@ -3,5 +3,28 @@
   margin: 0 auto;
   padding: 2rem;
   text-align: center;
-  
+
+  img {
+    height: 64px;
+  }
+    h1, h2, h3, h4, h5, h6 {
+    font-family: "waltograph";
+  }
+}
+* {
+  border: solid 2px lime;
+}
+header {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  div {
+    display: flex;
+    align-items: center;
+
+    h1 {
+      font-size: 5em;
+      line-height: 2;
+    }
+  }
 }

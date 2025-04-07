@@ -31,7 +31,7 @@ body {
   /*!*/
   background-color: #103173;
   color: #D8A0D9;
-  background-image: radial-gradient(#103173 1%, transparent 30%), url('/src/assets/disney-castle.png');
+  background-image: radial-gradient(#103173 20%, transparent 60%), url('/src/assets/disney-castle.png');
 background-size: cover;}
 
 h1 {
