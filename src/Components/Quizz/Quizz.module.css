@@ -6,6 +6,13 @@ section {
     align-items: center;
     margin: 0 auto;
 }
+input {
+    background-color: transparent;
+    border: solid 3px yellow;
+    color: whitesmoke;
+    font-size: 1.5em;
+}
+
 
 .guessbox {
     border: solid 2px red;
@@ -16,5 +23,8 @@ section {
     width: 50%;
 }
 .red {
-    color: red;
+    background-color: red;
+}
+.green {
+    background-color: green;
 }

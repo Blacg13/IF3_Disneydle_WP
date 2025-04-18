@@ -23,7 +23,6 @@ const QuizzQuotes = () => {
         return data[index];
       }
       const dailyQuote = getDailyQuote(items);
-      console.log(dailyQuote);
     //& ===================================================================================
     const characters = [...new Set(jsonData.quotesFR.map((quote) => (quote.character)))]
     return ( 
