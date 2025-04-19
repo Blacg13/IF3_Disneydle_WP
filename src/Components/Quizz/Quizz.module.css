@@ -1,4 +1,3 @@
-
 section {
     width: 80%;
     display: flex;
@@ -18,7 +17,6 @@ input {
 .guessbox {
     border: solid 2px red;
 }
-
 .quote {
     border: solid 2px red;
     width: 50%;
