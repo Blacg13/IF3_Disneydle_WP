@@ -1,18 +1,96 @@
+/*================================================================================================*/
+/** Style reset **/
+/*================================================================================================*/
 :root {
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
-  line-height: 1.5;
-  font-weight: 400;
-
-  color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+*, *::after, *::before {
+  box-sizing: border-box;
+}
+* {
+  list-style: none;
+  list-style-type: none;
+  text-decoration: none;
 
+  label, button {
+    cursor: pointer;
+    user-select: none;
+    background-color: transparent;
+    border: none;
+  }
+  
+  a {
+    cursor: pointer;
+    user-select: none;
+    &:hover {
+        text-decoration: none;
+    }
+    &:active {
+        text-decoration: none;
+    }
+  }
+}
+/*================================================================================================*/
+/** Custom properties : FONTS **/
+/*================================================================================================*/
+:root {
+  font-family: 'random-wednesday', sans-serif;
+  line-height: 1.5;
+}
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'waltograph', sans-serif;
+  line-height: 2;
+  font-weight: 900;
+}
+@font-face {
+  font-family: 'waltograph';
+  src: url("/src/assets/fonts/waltograph/waltographUI.ttf") format("truetype");
+}
+@font-face {
+  font-family: 'pls-song';
+  src: url("/src/assets/fonts/Please write me a song.ttf") format("truetype");
+}
+@font-face {
+  font-family: 'random-wednesday';
+  src: url("/src/assets/fonts/Random Wednesday.ttf") format("truetype");
+}
+/*================================================================================================*/
+/** Custom properties : COLORS **/
+/*================================================================================================*/
+:root {
+  /* todo */
+  --white-color: #ffffff;
+  --black-color: #000000;
+  --grey-color: #808080;
+  --primary-color: #103173;
+  --secondary-color: #FFC0CB;
+  --accent-color: #ffd700;
+}
+p, a, span, label, button, h2, h3, h4, h5, h6 {
+  color: var(--white-color);
+}
+h1 {
+  color: var(--primary-color);
+}
+/*================================================================================================*/
+/** Custom properties : BACKGROUND **/
+/*================================================================================================*/
+body {
+  background-image: radial-gradient(#103173 20%, transparent 60%), url('/src/assets/disney-castle.jpg');
+  background-position: right 0% bottom 20%;
+  background-repeat: no-repeat;
+  height: 100%;
+}
+
+/*
 a {
   font-weight: 500;
   color: #646cff;
@@ -28,11 +106,11 @@ body {
   place-items: center;
   min-width: 320px;
   min-height: 100vh;
-  /*!*/
+  !
   background-color: #103173;
   color: #D8A0D9;
-  background-image: radial-gradient(#103173 20%, transparent 60%), url('/src/assets/disney-castle.png');
-background-size: cover;}
+  background-size: cover;
+}
 
 h1 {
   font-size: 3.2em;
@@ -58,20 +136,5 @@ button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
 }
 
-@media (prefers-color-scheme: light) {
-  :root {
-    color: #213547;
-    background-color: #ffffff;
-  }
-  a:hover {
-    color: #747bff;
-  }
-  button {
-    background-color: #f9f9f9;
-  }
-}
 
-@font-face {
-  font-family: 'waltograph';
-  src: url("/src/assets/fonts/waltograph/waltographUI.ttf") format("truetype");
-}
+*/

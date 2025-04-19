@@ -11,9 +11,6 @@
     font-family: "waltograph";
   }
 }
-* {
-  border: solid 2px lime;
-}
 header {
   display: flex;
   flex-flow: column nowrap;

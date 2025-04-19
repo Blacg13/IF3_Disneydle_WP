@@ -28,7 +28,7 @@ const QuizzQuotes = () => {
     return ( 
     <main>
         <section>
-            <h2>Quel personnage dit cette citation ?</h2>
+            <h2>De quel personnage est cette citation ?</h2>
             <p className={style.quote}>{dailyQuote.content}</p>
         </section>
         <Guessbox items={characters} dailyItem={dailyQuote.character} />
