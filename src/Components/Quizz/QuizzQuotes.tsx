@@ -27,9 +27,9 @@ const QuizzQuotes = () => {
     const characters = [...new Set(jsonData.quotesFR.map((quote) => (quote.character)))]
     return ( 
     <>
-        <section>
+        <section className={style.quote}>
             <h2>De quel personnage est cette citation ?</h2>
-            <p className={style.quote}>{dailyQuote.content}</p>
+            <p>{dailyQuote.content}</p>
         </section>
         <Guessbox items={characters} dailyItem={dailyQuote.character} />
     </> 

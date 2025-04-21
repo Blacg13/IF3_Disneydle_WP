@@ -73,6 +73,7 @@
   --primary-color: #0A1D48;
   --secondary-color: #FFC0CB;
   --accent-color: #ffd700;
+  --accent-bg-color: rgba(255, 215, 0, 0.8);
 }
 /*================================================================================================*/
 /** BACKGROUND IMG **/

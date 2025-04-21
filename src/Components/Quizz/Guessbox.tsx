@@ -1,3 +1,4 @@
+import style from "./Quizz.module.css"
 import { useState } from "react";
 import { useCombobox } from "downshift";
 // import style from "./Quizz.module.css";
@@ -25,7 +26,6 @@ const Guessbox: React.FC<GuessboxProps> = ({ items, dailyItem }) => {
     const {
         isOpen,
         getToggleButtonProps,
-        getLabelProps,
         getMenuProps,
         getInputProps,
         // highlightedIndex,
@@ -41,20 +41,19 @@ const Guessbox: React.FC<GuessboxProps> = ({ items, dailyItem }) => {
         },
       })
 
-    return <>
-        <label {...getLabelProps()}>
-            Devine le personnage à l'origine de cette citation :
-        </label>
-        <input placeholder="Devine le personnage" {...getInputProps()} />
+    return <section className={style.guessbox}>
+      {/* <div> */}
+        <input placeholder="Devine le personnage !" {...getInputProps()} />
         <button {...getToggleButtonProps()} >{isOpen ? <>&#8593;</> : <>&#8595;</>}</button>
+      {/* </div> */}
         <ul {...getMenuProps()}>
             {isOpen && filteredItems.map((item, index) => (
-                <li {...getItemProps({item, index})}>
-                    <span>{item}</span>
+                <li key={item} {...getItemProps({item, index})}>
+                    {item}
                 </li>
             ))}
         </ul>
-    </>
+    </section>
 
 
 
