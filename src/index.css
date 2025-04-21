@@ -6,6 +6,7 @@
   padding: 0px;
   box-sizing: border-box;
   scroll-behavior: smooth;
+  overflow: hidden;
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -37,6 +38,9 @@
         text-decoration: none;
     }
   }
+  img {
+    max-height: 64px;
+  }
 }
 /*================================================================================================*/
 /** Custom properties : FONTS **/
@@ -67,10 +71,11 @@ h1, h2, h3, h4, h5, h6 {
 /*================================================================================================*/
 :root {
   /* todo */
-  --white-color: #ffffff;
-  --black-color: #000000;
-  --grey-color: #808080;
-  --primary-color: #103173;
+  --white-color: #F8F3F2;
+  --black-color: #171512;
+  --grey-color: #544C6A;
+  /* --primary-color: #103173; */
+  --primary-color: #0A1D48;
   --secondary-color: #FFC0CB;
   --accent-color: #ffd700;
 }
@@ -80,61 +85,15 @@ p, a, span, label, button, h2, h3, h4, h5, h6 {
 h1 {
   color: var(--primary-color);
 }
-/*================================================================================================*/
-/** Custom properties : BACKGROUND **/
-/*================================================================================================*/
-body {
-  background-image: radial-gradient(#103173 20%, transparent 60%), url('/src/assets/disney-castle.jpg');
-  background-position: right 0% bottom 20%;
-  background-repeat: no-repeat;
-  height: 100%;
-}
-
-/*
-a {
-  font-weight: 500;
-  color: #646cff;
-  text-decoration: inherit;
-}
 a:hover {
-  color: #535bf2;
+  color: var(--accent-color);
 }
-
+/*================================================================================================*/
+/** BACKGROUND IMG **/
+/*================================================================================================*/
 body {
-  margin: 0;
-  display: flex;
-  place-items: center;
-  min-width: 320px;
-  min-height: 100vh;
-  !
-  background-color: #103173;
-  color: #D8A0D9;
-  background-size: cover;
+  height: 100vh;
+  background-image: url('/src/assets/disney-castle.png');
+  background-position: left center;
+  background-repeat: no-repeat;
 }
-
-h1 {
-  font-size: 3.2em;
-  line-height: 1.1;
-}
-
-button {
-  border-radius: 8px;
-  border: 1px solid transparent;
-  padding: 0.6em 1.2em;
-  font-size: 1em;
-  font-weight: 500;
-  font-family: inherit;
-  background-color: #1a1a1a;
-  cursor: pointer;
-  transition: border-color 0.25s;
-}
-button:hover {
-  border-color: #646cff;
-}
-button:focus,
-button:focus-visible {
-  outline: 4px auto -webkit-focus-ring-color;
-}
-
-
-*/

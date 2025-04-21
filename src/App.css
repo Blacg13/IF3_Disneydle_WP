@@ -1,27 +1,36 @@
+/*================================================================================================*/
+/** LAYOUT **/
+/*================================================================================================*/
+body, #root, main, header, footer, header > div {
+  min-width: 340px;
+  display: flex;
+  align-items: center;
+}
+body, #root, header, footer, header > div {
+  justify-content: center;
+}
+main {
+  justify-content: stretch;
+}
+#root, header, footer, main {
+  flex-flow: column nowrap;
+}
+/*================================================================================================*/
+/** SCALING **/
+/*================================================================================================*/
 #root {
   max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
-
-  img {
-    height: 64px;
+  height: 900px;
+  header {
+    height: 25%;
   }
-    h1, h2, h3, h4, h5, h6 {
-    font-family: "waltograph";
+  main {
+    height: 65%;
   }
-}
-header {
-  display: flex;
-  flex-flow: column nowrap;
-  align-items: center;
-  div {
-    display: flex;
-    align-items: center;
-
-    h1 {
-      font-size: 5em;
-      line-height: 2;
-    }
+  footer {
+    height: 10%;
+  }
+  main, header, footer {
+    width: 100%;
   }
 }

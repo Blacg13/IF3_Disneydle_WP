@@ -1,14 +1,14 @@
 import { Link } from "react-router-dom"
 import { useEffect } from "react"
-import style from "./Quiz.module.css"
+import style from "./QuizMenu.module.css"
 
 const QuizMenu = () => {
     useEffect(() => {}, [])
-    console.log("hello world");
-    
+
     return (
-        <main>
-            <nav className={style.container}> 
+        <>
+            <h2 className={style.menuTitle}>Devine les personnages Disney !</h2>
+            <nav className={style.quizznav}> 
                 <ul>
                     <li>
                         <Link to="/characters" >
@@ -27,7 +27,7 @@ const QuizMenu = () => {
                     </li>
                 </ul>
             </nav>
-        </main>
+        </>
     )
 }
 export default QuizMenu

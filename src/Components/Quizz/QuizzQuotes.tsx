@@ -26,13 +26,13 @@ const QuizzQuotes = () => {
     //& ===================================================================================
     const characters = [...new Set(jsonData.quotesFR.map((quote) => (quote.character)))]
     return ( 
-    <main>
+    <>
         <section>
             <h2>De quel personnage est cette citation ?</h2>
             <p className={style.quote}>{dailyQuote.content}</p>
         </section>
         <Guessbox items={characters} dailyItem={dailyQuote.character} />
-    </main> 
+    </> 
 )
 
 }

@@ -1,0 +1,22 @@
+.menuTitle {
+    color: var(--secondary-color);
+    filter: drop-shadow(-4px 4px 5px var(--primary-color));
+}
+.quizznav {
+    ul {
+        height: 100%;
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: space-between;
+        align-items: center;
+    }
+    li {
+        padding: 1em;
+        background-image: radial-gradient(var(--primary-color) 65%, transparent 70%);
+        filter: drop-shadow(-12px 0 5px var(--primary-color));
+        width: max-content;
+        font-size: 2rem;
+        letter-spacing: 0.1ch;
+        border-image: url("/src/assets/disney-border.png") 40 fill;
+    }
+}

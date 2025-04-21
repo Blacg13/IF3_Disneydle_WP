@@ -32,12 +32,12 @@ const QuizzSongs = () => {
 
       
     return ( 
-        <main>
+        <>
             <section>
             <h2>Quel est le nom de cette chanson (en anglais) ?</h2>
             <iframe src={"https://www.youtube.com/embed/" + "UEZdKKyG1IM"} height={"80%"} width={"50%"}></iframe>
             </section>
-        </main> 
+        </> 
     )
 }
 

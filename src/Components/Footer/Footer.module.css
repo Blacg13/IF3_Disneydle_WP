@@ -1,19 +1,13 @@
-footer {
-    display: flex;
-    flex-flow: column nowrap;
-}
-.logo {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 24px;
-    img {
-        height: 32px;
+.footer {
+    padding: 3em 1em;
+    border: double 3px var(--secondary-color);
+    p {
+        line-height: 1em;
     }
-}
-.copyright {
-    font-size: 16px;
-}
-.disclaimer {
-    font-size: 12px;
+    a {
+        text-decoration: underline;
+    }
+    img {
+        display: none
+    }
 }
