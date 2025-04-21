@@ -7,7 +7,7 @@ const QuizMenu = () => {
 
     return (
         <>
-            <h2 className={style.menuTitle}>Devine les personnages Disney !</h2>
+            <h2>Devine les personnages Disney !</h2>
             <nav className={style.quizznav}> 
                 <ul>
                     <li>

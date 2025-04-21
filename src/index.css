@@ -46,13 +46,8 @@
 /** Custom properties : FONTS **/
 /*================================================================================================*/
 :root {
-  font-family: 'random-wednesday', sans-serif;
-  line-height: 1.5;
-}
-h1, h2, h3, h4, h5, h6 {
-  font-family: 'waltograph', sans-serif;
-  line-height: 2;
-  font-weight: 900;
+  --title-font: 'waltograph', sans-serif;
+  --text-font: 'random-wednesday', sans-serif;
 }
 @font-face {
   font-family: 'waltograph';
@@ -78,15 +73,6 @@ h1, h2, h3, h4, h5, h6 {
   --primary-color: #0A1D48;
   --secondary-color: #FFC0CB;
   --accent-color: #ffd700;
-}
-p, a, span, label, button, h2, h3, h4, h5, h6 {
-  color: var(--white-color);
-}
-h1 {
-  color: var(--primary-color);
-}
-a:hover {
-  color: var(--accent-color);
 }
 /*================================================================================================*/
 /** BACKGROUND IMG **/

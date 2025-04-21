@@ -1,7 +1,3 @@
-.menuTitle {
-    color: var(--secondary-color);
-    filter: drop-shadow(-4px 4px 5px var(--primary-color));
-}
 .quizznav {
     ul {
         height: 100%;
