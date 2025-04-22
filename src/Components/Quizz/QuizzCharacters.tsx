@@ -30,7 +30,6 @@ const items: CharacterItem[] = jsonData.characters;
       }
       const dailyCharacter = getDailyCharacter(items);
     //& ===================================================================================
-const charactersNames = [...new Set(items.map((character) => (character.name)))] 
       
       console.log("dailyCharacter : ", dailyCharacter);
 return (
@@ -39,7 +38,7 @@ return (
         <h2>Devine les personnages Disney du jour !</h2>
 
         </section>
-        <Guessbox items={charactersNames} dailyItem={dailyCharacter.name} />
+        <Guessbox items={items.map((item) => item.name)} dailyItem={dailyCharacter.name} />
     </>
 )
 

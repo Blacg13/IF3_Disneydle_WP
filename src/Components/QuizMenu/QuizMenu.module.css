@@ -15,7 +15,7 @@
         width: max-content;
         font-size: 2rem;
         letter-spacing: 0.1ch;
-        border-image: url("/src/assets/disney-border.png") 40 fill;
+        border-image: url("/src/assets/disney-border.png") 10 fill;
 
         &:hover {
             filter: brightness(1.2);
