@@ -10,12 +10,12 @@ section {
     border-radius: 0.5em;
     background-color: var(--accent-bg-color);
     h2 {
-        font-size: 1.5em;
+        font-size: 1.3em;
     }
     p {
         padding: 0.5em;
         max-width: 40rem;
-        font-size: 2em;
+        font-size: 1.5em;
         color: var(--black-color);
         border: double 2px var(--grey-color);
         /* &::before {
