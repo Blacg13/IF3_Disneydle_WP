@@ -1,6 +1,6 @@
 import jsonData from '../../data/characters.json'
 import style from "./Quizz.module.css"
-import Guessbox from './Guessbox';
+// import Guessbox from './Guessbox';
 const QuizzCharacters = () => {
 interface CharacterItem {
     name?: string,
