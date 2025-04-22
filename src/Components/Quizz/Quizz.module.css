@@ -1,6 +1,4 @@
 section {
-    /* border: solid 2px red; */
-
     padding: 1.5em;
     display: flex;
     flex-flow: column nowrap;
@@ -8,7 +6,6 @@ section {
     align-items: center;
 }
 .quote {
-    /* border: solid 3px var(--secondary-color); */
     border-radius: 0.5em;
     background-color: var(--accent-bg-color);
     h2 {
@@ -20,12 +17,6 @@ section {
         font-size: 1.5em;
         color: var(--black-color);
         border: double 2px var(--grey-color);
-        /* &::before {
-            content: "«";
-        }
-        &::after {
-            content: "»";
-        } */
     }
 }
 .guessbox {
@@ -82,7 +73,6 @@ section {
 .selectedList {
     ul {
         flex-flow: column-reverse nowrap;
-        /* border: solid 3px lime; */
     }
     li {
         width: 30rem;
@@ -96,18 +86,3 @@ section {
         background-color: var(--red-color);
     }
 }
-
-
-/* .guessbox {
-    border: solid 2px red;
-}
-.quote {
-    border: solid 2px red;
-    width: 50%;
-}
-.red {
-    background-color: red;
-}
-.green {
-    background-color: green;
-} */
