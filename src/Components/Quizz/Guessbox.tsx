@@ -1,7 +1,6 @@
 import style from "./Quizz.module.css"
 import { useState } from "react";
 import { useCombobox } from "downshift";
-// import style from "./Quizz.module.css";
 interface GuessboxProps {
     items: string[];
     dailyItem: string;
