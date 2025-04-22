@@ -1,5 +1,6 @@
 .footer {
-    padding: 3em 1em;
+    padding: 3em 6em;
+    max-width: 800px;
     border: double 3px var(--secondary-color);
     p {
         line-height: 1em;

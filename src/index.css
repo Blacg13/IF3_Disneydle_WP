@@ -55,10 +55,6 @@
   src: url("/src/assets/fonts/waltograph/waltographUI.ttf") format("truetype");
 }
 @font-face {
-  font-family: 'pls-song';
-  src: url("/src/assets/fonts/Please write me a song.ttf") format("truetype");
-}
-@font-face {
   font-family: 'random-wednesday';
   src: url("/src/assets/fonts/Random Wednesday.ttf") format("truetype");
 }
