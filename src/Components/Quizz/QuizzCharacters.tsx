@@ -2,7 +2,6 @@ import jsonData from '../../data/characters.json'
 import style from "./Quizz.module.css"
 import Guessbox from './Guessbox';
 const QuizzCharacters = () => {
-    console.log("jsonData: ", jsonData);
 interface CharacterItem {
     name: string,
     clothingColor: string,
@@ -13,10 +12,7 @@ interface CharacterItem {
     type: string,
     continent: string
 }
-const items: CharacterItem[] = jsonData;
-console.log("items: ", items);
-const charactersNames = [...new Set(jsonData.map((character) => (character.name)))] 
-
+const items: CharacterItem[] = jsonData.characters;
     //& Functions to pick the character of the day ============================================
     function hashString(str: string): number {
         let hash = 0;
@@ -34,6 +30,9 @@ const charactersNames = [...new Set(jsonData.map((character) => (character.name)
       }
       const dailyCharacter = getDailyCharacter(items);
     //& ===================================================================================
+const charactersNames = [...new Set(items.map((character) => (character.name)))] 
+      
+      console.log("dailyCharacter : ", dailyCharacter);
 return (
     <>
         <section className={style.character}>
