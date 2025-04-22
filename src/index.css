@@ -66,13 +66,17 @@
 :root {
   /* todo */
   --white-color: #F8F3F2;
+  /* --white-color: #FBFBFB; */
   --black-color: #171512;
   --grey-color: #544C6A;
+  /* --grey-color: #2D3047; */
   /* --primary-color: #103173; */
   --primary-color: #0A1D48;
   --secondary-color: #FFC0CB;
   --accent-color: #ffd700;
   --accent-bg-color: rgba(255, 215, 0, 0.8);
+  --green-color: #1B998B;
+  --red-color: #EF767A;
 }
 /*================================================================================================*/
 /** BACKGROUND IMG **/
