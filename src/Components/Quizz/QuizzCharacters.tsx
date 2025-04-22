@@ -3,14 +3,14 @@ import style from "./Quizz.module.css"
 import Guessbox from './Guessbox';
 const QuizzCharacters = () => {
 interface CharacterItem {
-    name: string,
-    clothingColor: string,
-    role: string,
-    parutionYear: number,
-    gender: string,
-    hairColor: string,
-    type: string,
-    continent: string
+    name?: string,
+    clothingColor?: string,
+    role?: string,
+    parutionYear?: number,
+    gender?: string,
+    hairColor?: string,
+    type?: string,
+    continent?: string
 }
 const items: CharacterItem[] = jsonData.characters;
     //& Functions to pick the character of the day ============================================
@@ -38,7 +38,7 @@ return (
         <h2>Devine les personnages Disney du jour !</h2>
 
         </section>
-        <Guessbox items={items.map((item) => item.name)} dailyItem={dailyCharacter.name} />
+        <Guessbox items={items ? items.map((item) => item.name ? item.name : '') : []} dailyItem={dailyCharacter.name ? dailyCharacter.name : ''} />
     </>
 )
 
