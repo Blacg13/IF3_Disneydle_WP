@@ -7,6 +7,8 @@ interface GuessboxProps {
     dailyItem: string;
 }
 const Guessbox: React.FC<GuessboxProps> = ({ items, dailyItem }) => {
+  console.log("dailyItem: ", dailyItem);
+  
     console.log("items: ", items);
     
     function getItemsFilter(inputValue: string) {
@@ -46,13 +48,15 @@ const Guessbox: React.FC<GuessboxProps> = ({ items, dailyItem }) => {
         <input placeholder="Devine le personnage !" {...getInputProps()} />
         <button {...getToggleButtonProps()} >{isOpen ? <>&#8593;</> : <>&#8595;</>}</button>
       {/* </div> */}
+      <div>
         <ul {...getMenuProps()}>
             {isOpen && filteredItems.map((item, index) => (
-                <li key={item} {...getItemProps({item, index})}>
+              <li key={item} {...getItemProps({item, index})}>
                     {item}
                 </li>
             ))}
         </ul>
+      </div>
     </section>
 
 

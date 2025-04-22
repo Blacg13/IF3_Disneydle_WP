@@ -1,10 +1,12 @@
 .quizznav {
     ul {
+        padding: 1em;
         height: 100%;
         display: flex;
         flex-flow: column nowrap;
         justify-content: space-between;
         align-items: center;
+        gap: 1em;
     }
     li {
         padding: 1em;
@@ -14,5 +16,12 @@
         font-size: 2rem;
         letter-spacing: 0.1ch;
         border-image: url("/src/assets/disney-border.png") 40 fill;
+
+        &:hover {
+            filter: brightness(1.2);
+            a {
+                color: var(--accent-color);
+            }
+        }
     }
 }

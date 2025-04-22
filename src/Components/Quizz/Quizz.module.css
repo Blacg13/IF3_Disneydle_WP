@@ -14,6 +14,7 @@ section {
     }
     p {
         padding: 0.5em;
+        max-width: 40rem;
         font-size: 2em;
         color: var(--black-color);
         border: double 2px var(--grey-color);
@@ -29,7 +30,7 @@ section {
     input, li, li > span {
         padding: 0.3em;
         background-color: var(--white-color);
-        color: var(--black-color);
+        color: var(--grey-color);
         width: 100%;
     }
     input {
@@ -39,7 +40,20 @@ section {
         border-radius: 0.5em;
         size: min-content;
     }
+    button {
+        display: none;
+    }
+    div {
+        width: 100%;
+        position: relative;
+        align-items: stretch;
+        ul {
+            position: absolute;
+        }
+    }
     ul {
+        position: absolute;
+        left: -3em;
         z-index: 2000;
         display: flex;
         flex-flow: column nowrap;
@@ -48,7 +62,7 @@ section {
     }
     li {
         width: 30rem;
-        left: -2em;
+        border-radius: 0.1em;
         border: solid 3px var(--accent-color);
         font-size: 2em;
         &:hover {

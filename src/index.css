@@ -6,7 +6,7 @@
   padding: 0px;
   box-sizing: border-box;
   scroll-behavior: smooth;
-  overflow: hidden;
+  /* overflow: hidden; */
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -27,7 +27,6 @@
     background-color: transparent;
     border: none;
   }
-  
   a {
     cursor: pointer;
     user-select: none;
@@ -79,8 +78,8 @@
 /** BACKGROUND IMG **/
 /*================================================================================================*/
 body {
-  height: 100vh;
+  min-height: 100vh;
   background-image: url('/src/assets/disney-castle.png');
   background-position: left center;
-  background-repeat: no-repeat;
+  background-repeat: repeat-y;
 }

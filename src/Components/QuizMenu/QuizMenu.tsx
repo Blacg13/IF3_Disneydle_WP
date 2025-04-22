@@ -10,21 +10,21 @@ const QuizMenu = () => {
             <h2>Devine les personnages Disney !</h2>
             <nav className={style.quizznav}> 
                 <ul>
-                    <li>
                         <Link to="/characters" >
+                    <li>
                             Personnages
-                        </Link>
                     </li>
-                    <li>
+                        </Link>
                         <Link to="/quotes" >
-                            Citations
-                        </Link>
-                    </li>
                     <li>
-                        <Link to="/songs" >
-                            Chansons
-                        </Link>
+                            Citations
                     </li>
+                        </Link>
+                        <Link to="/songs" >
+                    <li>
+                            Chansons
+                    </li>
+                        </Link>
                 </ul>
             </nav>
         </>

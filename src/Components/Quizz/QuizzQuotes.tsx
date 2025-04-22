@@ -7,7 +7,7 @@ const QuizzQuotes = () => {
     character: string;
   }
   const items: QuoteItem[] = jsonData.quotesFR;
-    //& Functions to pick the song of the day ============================================
+    //& Functions to pick the quote of the day ============================================
       function hashString(str: string): number {
         let hash = 0;
         for (let i = 0; i < str.length; i++) {
