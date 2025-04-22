@@ -59,6 +59,9 @@ section {
         flex-flow: column nowrap;
         justify-content: flex-start;
         align-items: flex-start;
+
+        max-height: 12rem;
+        overflow: scroll;
     }
     li {
         width: 30rem;
@@ -68,6 +71,14 @@ section {
         &:hover {
             background-color: var(--accent-color);
         }
+    }
+}
+.selectedList {
+    .correct {
+        background-color: var(--green-color);
+    }
+    .incorrect {
+        background-color: var(--red-color);
     }
 }
 
