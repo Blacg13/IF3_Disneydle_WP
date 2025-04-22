@@ -20,7 +20,9 @@
   list-style: none;
   list-style-type: none;
   text-decoration: none;
-
+  ul {
+    padding-left: 0;
+  }
   label, button {
     cursor: pointer;
     user-select: none;
