@@ -73,6 +73,7 @@ section {
 .selectedList {
     ul {
         flex-flow: column-reverse nowrap;
+        gap: 0.5em;
     }
     li {
         width: 30rem;
